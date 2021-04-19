@@ -8,8 +8,8 @@ let pokemonList = [
 //Print on document the name and height of each Pokemon. Highlight also special Pokemon
 for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height > 5)
-  document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') '
-  + ' - Wow, that\'s big! ');
+  document.write('<div>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') '
+  + ' - Wow, that\'s big! </div>');
   else if (pokemonList[i].height < 5)
-  document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') ');
+  document.write('<div>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') </div>');
 }
