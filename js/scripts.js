@@ -7,10 +7,10 @@ var pokemonRepository = (function ()
 
   pokemonList.forEach(function (pokemon) {
       if (pokemon.height > 5)
-  document.write(pokemon.name + ' (height: ' + pokemon.height + ') '
-  + ' - Wow, that\'s big!');
+  document.write('<div>' + pokemon.name + ' (height: ' + pokemon.height + ') '
+  + ' - Wow, that\'s big! </div>');
       else if (pokemon.height < 5)
-  document.write(pokemon.name + ' (height: ' + pokemon.height + ') ');
+  document.write('<div>' + pokemon.name + ' (height: ' + pokemon.height + ') </div>');
     });
 
   function add(pokemon) {
