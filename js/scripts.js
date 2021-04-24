@@ -1,27 +1,70 @@
-var pokemonRepository = (function ()
-{
-  var pokemonList = [{ name: 'Pikachu', height: 1.04, type: ['Electric'] },
-{ name: 'Charizard', height: 5.07, type: ['Fire', 'Flying'] },
-{ name: 'Gengar', height: 4.11, type: ['Ghost', 'Poison'] },
-];
+let pokemonRepository = (function () {
+  let repository = [{
+      name: "Pikachu",
+      height: 1.04,
+      types: ["Electric"],
+    },
+    {
+      name: "Charizard",
+      height: 5.07,
+      types: ["Fire", "Flying"],
+    },
+    {
+      name: "Gengar",
+      height: 4.11,
+      types: ["Ghost", "Poison"],
+    },
+  ];
+
   function add(pokemon) {
-    pokemonList.push(pokemon);
+    if (
+      typeof pokemon === "object" &&
+      "name" in pokemon &&
+      "height" in pokemon &&
+      "types" in pokemon
+    ) {
+      repository.push(pokemon);
+    } else {
+      return ("pokemon is not correct");
+    }
   }
 
   function getAll() {
-    return pokemonList;
+    return repository;
+  }
+
+  function addListItem(pokemon) {
+    let pokemonList = document.querySelector(".pokemon-list");
+    let listpokemon = document.createElement("li");
+    let button = document.createElement("button");
+    button.innerText = pokemon.name;
+    button.classList.add("button-class");
+    listpokemon.appendChild(button);
+    pokemonList.appendChild(listpokemon);
+  }
+
+  function showDetails(pokemon) {
+    button.addEventListener('click', function (event) {
+      console.log(event);
+    });
   }
 
   return {
     add: add,
     getAll: getAll,
+    addListItem: addListItem,
+    addEventListener: showDetails,
   };
 })();
 
+pokemonRepository.add({
+  name: "Arcanine",
+  height: 6.03,
+  types: ["Fire"],
+});
+
+pokemonRepository.getAll();
+
 pokemonRepository.getAll().forEach(function (pokemon) {
-    if (pokemon.height > 5)
-document.write('<div>' + pokemon.name + ' (height: ' + pokemon.height + ') '
-+ ' - Wow, that\'s big! </div>');
-    else if (pokemon.height < 5)
-document.write('<div>' + pokemon.name + ' (height: ' + pokemon.height + ') </div>');
-  });
+  pokemonRepository.addListItem(pokemon);
+});
