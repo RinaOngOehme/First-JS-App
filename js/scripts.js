@@ -44,12 +44,11 @@ let pokemonRepository = (function () {
     button.addEventListener("click", function (showDetails) {console.log(pokemon);});
   }
 
-  
+
   return {
     add: add,
     getAll: getAll,
     addListItem: addListItem,
-    addEventListener: showDetails,
   };
 })();
 
