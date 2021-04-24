@@ -41,12 +41,11 @@ let pokemonRepository = (function () {
     button.classList.add("button-class");
     listpokemon.appendChild(button);
     pokemonList.appendChild(listpokemon);
+    button.addEventListener("click", function (showDetails) {console.log(pokemon);});
   }
 
   function showDetails(pokemon) {
-    button.addEventListener('click', function () {
-      console.log(pokemon);
-    });
+    console.log(pokemon);
   }
 
   return {
