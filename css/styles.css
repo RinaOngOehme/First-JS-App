@@ -4,29 +4,15 @@
   margin-top: 50px;
   font-style: normal;
   font-weight: bolder;
-  background-color: #a1dbff;
+  background-color: #ffa500;
   color: black;
   border-width:medium;
-  border-style: dashed;
   box-sizing: content-box;
 }
 
-.button-class {
-  background-color: #ffa500; /* Orange */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid #ffa500;
+
+.list-group {
+  border-radius: 0;
 }
 
 #modal-container {
