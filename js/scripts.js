@@ -85,7 +85,7 @@ let pokemonRepository = (function () {
     modalHeader.empty();
 
     //create element for name in modal content
-    let nameElement = $("<h5>" + item.name + "</h5>");
+    let nameElement = $("<h5>" + "Name: " + item.name + "</h5>");
 
     //create img in modal content
     let imageElement = $("<img class ='modal-img' style='width:50%'>");
