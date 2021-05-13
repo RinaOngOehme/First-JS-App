@@ -10,7 +10,11 @@
   box-sizing: content-box;
 }
 
-
 .list-group {
   border-radius: 0;
+}
+
+.navbar-brand {
+  float: left;
+  padding: 5px;
 }
