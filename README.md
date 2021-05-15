@@ -1,6 +1,6 @@
 **Pokedex App**
 
-**Project Objectives**
+**Project Objectives:**
 To build a small web application (Pokedex) that is meant to load data from an external Application Programming Interface (API)
 that enables user to view the details of the individual Pokemon (name, image and height) upon click.
 
@@ -20,7 +20,7 @@ that enables user to view the details of the individual Pokemon (name, image and
 * Edge
 * Internet Explorer 11
 
-**API used
+**API used**
 Pokemon API
 
 **Author:**
