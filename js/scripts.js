@@ -1,6 +1,3 @@
-//jshint esversion:6
-/* eslint-env jquery */
-
 let pokemonRepository = (function ()
 {
   let pokemonList = [];
