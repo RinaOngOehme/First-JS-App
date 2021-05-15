@@ -20,7 +20,7 @@ that enables user to view the details of the individual Pokemon (name, image and
 * Edge
 * Internet Explorer 11
 
-**API used**
+**API Used:**
 Pokemon API
 
 **Author:**
